@@ -8,7 +8,7 @@ MAINTAINER jochendev <jochenzhang94@gmail.com>
 #####################################
 
 ARG TZ=UTC
-ENV TZ ${TIMEZONE}
+ENV TZ ${TZ}
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 #####################################
